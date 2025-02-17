@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>French Fries Recipe</title>
+    <style>
+        .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000; 
+    }
+
+    .navbar-inverse {
+      margin-top: 0; 
+    }
+
+    .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+      color: white;
+    }
+
+    .jumbotron {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px;
+      background-color: #2f4f4f;
+      color: white;
+    }
+
+    .jumbotron h1 {
+      font-size: 80px;
+      margin: 0;
+      PADDING-top: 50px
+    }
+    body {
+    overflow-x: hidden !important;
+      padding-top: 50px;  
+}
+footer {
+            background-color: #2f4f4f;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #4682b4;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px black
+        }
+        header h1 {
+            margin: 0;
+        }
+        #asidenav {
+            background-color: #2f4f4f;
+            width: 20%;
+            padding: 15px;
+            height: auto;
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 8px black;
+            font-weight: bold;
+            color: whitesmoke;
+        }
+        #asidenav ul {
+            list-style: none;
+            padding: 0;
+        }
+        #asidenav li {
+            margin: 10px 0;
+        }
+        #asidenav a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        #asidenav a:hover {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+        #recipe-page {
+            padding: 30px;
+            margin: 20px auto;
+            margin-right: 25%;
+            width: 70%;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px black;
+        }
+        #recipe-page h3 {
+            color: #4682b4;
+            border-bottom: 2px solid #4682b4;
+            padding-bottom: 5px;
+        }
+        ul, ol {
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        figure{
+            display: inline;
+            margin: 10px auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px black;
+        }
+        .tip {
+            margin: 5px 0;
+            color: #444;
+            font-style: italic;
+        }
+        .tip span {
+            color: red;
+            font-weight: bold;
+        }
+        .step span {
+            font-weight:bold;
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid" style="padding:0px; margin:0px">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-inverse">
+              <div class="container">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="index.html">Portfolio</a>
+                </div>
+                <ul class="nav navbar-nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index2.html">Web Dev</a></li>
+                  <li><a href="academics.html">Academics</a></li>
+                  <li><a href="hobbies.html">Hobbies</a></li>
+                  <li><a href="sports.html">Sports</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Recipes<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="recipe3.html">Recipe 3</a></li>
+                      <li><a href="recipe2.html">Recipe 2</a></li>
+                      <li><a href="recipe1.html">Recipe 1</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="character.html">My Cat</a></li>
+                  <li><a href="myID.html">My ID</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-12">
+            <div class="jumbotron text-center">
+              <h1>French Fries</h1>
+            </div>
+          </div>
+        </div>
+    <aside id="asidenav">
+        <nav>
+            <ul>
+                <li><a href="#history">History</a></li>
+                <li><a href="#description">Description</a></li>
+                <li><a href="#ingredients">Ingredients</a></li>
+                <li><a href="#tips-notes">Tips/Notes</a></li>
+                <li><a href="#instructions">Instructions</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main id="recipe-page">
+        <article>
+            <section id="history">
+                <h3>History</h3>
+                <p>While the origin of the French fry isn’t entirely clear, historians often credit it to <strong>France or Belgium</strong>.<br> After being introduced to Europe by the Spanish, the <strong>potato</strong> gradually spread throughout the continent.<br> It’s believed that Belgians began the process of <strong>frying strips of potatoes</strong> between the <em><u>late 17th and early<br> 18th centuries</u></em>. When the river would <em>freeze</em> over each winter, and fishing was not to be had, the potato<br> became <strong>a stand-in for the fish</strong>, and the earliest iteration of French fries was born.</p>
+                <a href="https://www.pitco.com/blog/a-brief-history-of-french-fries-as-the-ultimate-side-re-optimized/" target="_blank">Learn More</a>
+            </section>
+            <section id="description">
+                <h3>Description</h3>
+                <p>Skip the drive-thru and make irresistible seasoned fries at home. This recipe creates fries that are crispy on the outside and fluffy on the inside.</p>
+            </section>
+            <div>
+                <section id="ingredients">
+                    <h3>Ingredients</h3>
+                    <ul>
+                        <li>2 ½ pounds russet potatoes, peeled</li>
+                        <li>1 cup vegetable oil for frying</li>
+                        <li>1 cup all-purpose flour</li>
+                        <li>1 teaspoon garlic salt</li>
+                        <li>1 teaspoon onion salt</li>
+                        <li>1 teaspoon paprika</li>
+                        <li>1 teaspoon salt</li>
+                        <li>½ cup water, or as needed</li>
+                    </ul>
+                </section>
+            </div>
+            <section id="tips-notes">
+                <h3>Tips/Notes</h3>
+                <ul>
+                    <li class="tip">Cut the potatoes evenly to ensure <span>uniform cooking</span>.</li>
+                    <li class="tip">Make sure to <span>pat the fries dry</span> to avoid oil splatter.</li>
+                    <li class="tip">Don’t overcrowd the frying pan, <span>fry in small batches</span>.</li>
+                </ul>
+            </section>
+            <div>
+                <section id="instructions">
+                    <h3>Instructions</h3>
+                    <ol>
+                        <li class="step">Slice potatoes into French fries and place them into a large<br> bowl of cold water to prevent them from turning brown.</li>
+                        <li class="step">Heat oil in a heavy saucepan or large skillet to 350 degrees F (175 degrees C).</li>
+                        <li class="step">While the oil is heating, sift flour, garlic salt, onion salt, paprika,<br> and salt into a large bowl. Gradually stir in enough water to make<br> a slightly thick batter that can be drizzled from a spoon. <span>Mix well</span></li>
+                        <li class="step">Drain fries and pat dry; dip into the batter one at a time.</li>
+                        <li class="step">Lower fries carefully into the hot oil in batches to prevent them from clumping together. Fry until golden brown and crispy on all sides, about 7 to 10 minutes.</li>
+                        <li class="step">Drain fries on a paper towel-lined plate.</li>
+                        <li class="step">Serve hot and enjoy!</li>
+                    </ol>
+                    <figure>
+                        <a href="https://www.allrecipes.com/recipe/50223/homemade-crispy-seasoned-french-fries/" target="_blank">
+                        <img src="media/french.png" alt="cut potatoes" width="300" height="250">
+                        <img src="media/fries.png" alt="french fries" width="300" height="250"></a>
+                        <video style="position:relative; top:124px" controls="controls" autoplay muted width="300" height="332" loop> 
+                            <source src="media/videoplayback.mp4" type="video/mp4">
+                        </video>
+                    </figure>
+                </section>
+            </div>
+            <section id="references">
+                <h3>References</h3>
+                <ul>
+                    <li><a href="https://www.allrecipes.com/recipe/50223/homemade-crispy-seasoned-french-fries/" target="_blank">AllRecipes</a></li>
+                    <li><a href="https://www.pitco.com/blog/a-brief-history-of-french-fries-as-the-ultimate-side-re-optimized/" target="_blank">Pitco</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=hrozhYx_mQE" target="_blank">Youtube Video</a></li>
+                </ul>
+            </section>
+        </article>
+    </main>
+    <footer class="center">
+            <p>George Nikolov</p>
+            <p>Contact me at <a href="mailto:gnnikolov@cps.edu">gnnikolov@cps.edu</a></p>
+            <p>
+              <a href="https://www.instagram.com/georgenikolov720/" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAB9qr2CRzXXuNQnMisnDS3IuGBzBc2vUG7Q&s" alt="Instagram" width="30" height="30" style="margin-right: 10px; border-radius:30%">
+              </a>
+              <a href="https://www.spotify.com" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRslcO84eWfXP_4Ucd4Yfz6B8uqJmHaTo0iTw&s" alt="Spotify" width="30" height="30" style="border-radius:60%">
+              </a>
+            </p>
+          </footer>
+</body>
+</html>

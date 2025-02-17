@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <title>Home</title>
+  <style>
+    footer { 
+      background-color: #2f4f4f;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+.jumbotron {
+  display: flex;
+  align-items: center; /* Vertically align the content */
+  justify-content: center; /* Horizontally center the content */
+  padding: 30px; /* Add padding for spacing */
+}
+
+.jumbotron img {
+  width: 320px; /* Set image width */
+  height: auto; /* Maintain image aspect ratio */
+  margin-right: 30px; /* Add space between image and text */
+}
+
+.jumbotron .text {
+  max-width: 400px; /* Set the text width to match the image */
+  text-align: left; /* Align text to the left */
+}
+
+.jumbotron h1 {
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+
+    .carousel-inner > .item > img {
+      width:555px;
+      height:360px;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; 
+      width: 100%;
+    }
+
+    .container-fluid {
+      width: 100%;
+      overflow-x: hidden; 
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000; 
+    }
+
+    .navbar-inverse {
+      margin-top: 0; 
+    }
+
+    .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+      color: white;
+    }
+
+    .dropdown-menu {
+      position: absolute !important;
+      top: 100% !important;
+      left: 0;
+      z-index: 1000;
+      display: none;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    body {
+      padding-top: 50px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container-fluid" style="padding:0px; margin:0px">
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-inverse">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="index.html">Portfolio</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="index2.html">Web Dev</a></li>
+              <li><a href="academics.html">Academics</a></li>
+              <li><a href="hobbies.html">Hobbies</a></li>
+              <li><a href="sports.html">Sports</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Recipes<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="recipe3.html">Recipe 3</a></li>
+                  <li><a href="recipe2.html">Recipe 2</a></li>
+                  <li><a href="recipe1.html">Recipe 1</a></li>
+                </ul>
+              </li>
+              <li><a href="character.html">My Cat</a></li>
+              <li><a href="myID.html">My ID</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron text-center" style="margin:0; padding:0;">
+          <div class="container" style="display: flex; align-items: center; justify-content: center;">
+            <img src="media/PHO00000BsriPK-11100000100011.jpg" alt="Lane Pic">
+            <div class="text">
+              <h1>George Nikolov</h1>
+              <p>I am a Freshman at Lane Tech College Prep, and I am 14 years old. I have a lot of different hobbies and enjoy spending time with my friends. I also enjoy making websites using HTML, which is included in this portfolio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <div class="container bg-success">
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="text-center bg-primary">Academics</h3>
+          <p>I graduated from Taft Academic Center and I am now in the Alpha STEM Program in Lane Tech.</p>
+          <img src="https://www.tafthighschool.org/ourpages/auto/2014/9/15/47815374/AC%20Logo%20New.jpg" alt="Taft" width="555px" height="300px">
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-center bg-primary">My Hobbies</h3>
+          <div style="margin-bottom:10px">
+            <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel1" data-slide-to="1"></li>
+                <li data-target="#myCarousel1" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="https://bcbstwelltuned.com/wp-content/uploads/2020/08/GettyImages-515801109-scaled-e1597084517960.jpg" alt="Bike" width="460" height="345">
+                  <div class="carousel-caption">
+                    <h3>Biking</h3>
+                    <p>I enjoy biking when the weather is warm by myself or with my friends.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="https://www.tibco.com/blog/wp-content/uploads/2017/12/traveling.png" alt="Travel" width="460" height="345">
+                  <div class="carousel-caption">
+                    <h3>Travelling</h3>
+                    <p>I love to travel and I have been to many different destinations. </p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="https://daily.jstor.org/wp-content/uploads/2023/01/good_times_with_bad_music_1050x700.jpg" alt="Music" width="460" height="345">
+                  <div class="carousel-caption">
+                    <h3>Music</h3>
+                    <p>I enjoy listening to music. I play piano, guitar, and I like collecting vinyl records.</p>
+                  </div>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container bg-success" style="margin-top:20px">
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="text-center bg-primary">Ethnicity</h3>
+          <ul class="list-unstyled" style="margin-top:0px">
+            <li style="text-align:center; font-size: 32px; font-weight: bold; color: #333;">
+              <h1>Bulgarian</h1>
+            </li>
+          </ul>
+          <p style="font-size: 19.2px; color: #333; text-align: center;">
+            My parents are both from Bulgaria and I go visit my family there every summer. I speak Bulgarian at home and it is a big part of who I am.
+          </p>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANkAAACCCAMAAAD8KZ1wAAAAGFBMVEX////WJhIAlm4AkmhsfVzhEgB6tJoAmXBYJczYAAAAiUlEQVR4nO3PQRGEAAwAsXLA4d8xKnhsJ3GQGQAAAAAAAAAAgE/8t5pzq/ltZdZj1mPWY9Zj1mPWY9Zj1mPWY9Zj1mPWY9Zj1mPWY9Zj1mPWY9azePZsNddWc281x1ZmPWY9Zj1mPWY9Zj1mPWY9Zj1mPWY9Zj1mPWY9Zj1mPWY9Zj1mPWY9e2cvfBh8nNRnNPoAAAAASUVORK5CYII=" alt="Swimming Pool" width="555px" height="200px">
+        </div>
+    
+        <div class="col-md-6">
+          <h3 class="text-center bg-primary">Sports</h3>
+          <img src="https://en.reformsports.com/oxegrebi/2023/10/what-is-an-olymp-swimming-pool.jpg" alt="Swimming Pool" width="555px" height="200px">
+          <ul class="list-unstyled" style="margin-top:0px">
+            <li style="text-align:center; font-size: 32px; font-weight: bold; color: #333;">
+              <h1>Swim</h1>
+            </li>
+          </ul>
+          <p style="font-size: 19.2px; color: #333; text-align: center;">
+            Swimming is a fun and relaxing activity but also an essential life skill. I started swimming in the middle of 8th grade and I joined the Lane Tech swim team this year.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top:20px">
+      <div class="col-md-12">
+        <footer class="center">
+          <p>George Nikolov</p>
+          <p>Contact me at <a href="mailto:gnnikolov@cps.edu">gnnikolov@cps.edu</a></p>
+          <p>
+            <a href="https://www.instagram.com/georgenikolov720/" target="_blank">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAB9qr2CRzXXuNQnMisnDS3IuGBzBc2vUG7Q&s" alt="Instagram" width="30" height="30" style="margin-right: 10px; border-radius:30%">
+            </a>
+            <a href="https://www.spotify.com" target="_blank">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRslcO84eWfXP_4Ucd4Yfz6B8uqJmHaTo0iTw&s" alt="Spotify" width="30" height="30" style="border-radius:60%">
+            </a>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

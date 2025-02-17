@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+body{
+    background-color:lightblue;
+  }
+  .oswald{
+    font-family: 'Oswald';font-size: 40px;
+    z-index:3;
+    position:absolute;
+    top:250px;
+    left:55px;
+    color:white;
+  }
+  .body{
+  width:220px;
+  height:250px;
+  background-color:black;
+  position:absolute;
+  left:135px;
+  top:240px;
+  border-radius: 20px 110px 20px 20px;
+  }
+  .head{
+    width:275px;
+    height:150px;
+    background-color:black;
+    position:absolute;
+    left:90px;
+    top:110px;
+    border-radius:40px;
+    z-index:2;
+  }
+  .foot{
+    width:35px;
+    height:30px;
+    background-color:black;
+    position:absolute;
+    border-radius:10px;
+  }
+  #foot1{
+    top:470px;
+    left:150px;
+  }
+  #foot2{
+    top:470px;
+    left:270px
+  }
+  .tail{
+    width:100px;
+    height:40px;
+    background-color:black;
+    border-radius:0px 60px 60px 0px;
+    position:absolute;
+    top:450px;
+    left:320px
+  }
+  .ear{
+    width:0px;
+    height:0px;
+    border-bottom: 80px solid black;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    position:absolute;
+  }
+  #ear1{
+    top:65px;
+    left:100px;
+    transform: rotate(-35deg);
+  }
+  #ear2{
+    top:65px;
+    left:275px;
+    transform: rotate(30deg);
+  }
+  .inner-ear{
+    width:0px;
+    height:0px;
+    border-bottom: 50px solid lightcoral;
+    border-left: 27px solid transparent;
+    position:absolute;
+  }
+  #ear3{
+  top:74px;
+    left:100px;
+    transform: rotate(-20deg);
+    z-index:1;
+  }
+  #ear4{
+  top:68px;
+    left:307px;
+    transform: rotate(7deg);
+    z-index:1;
+  }
+  .eye{
+    width:55px;
+    height:55px;
+    background-color:darkgoldenrod;
+    border-radius:100px;
+    position:absolute;
+  }
+  #eye1{
+    top:140px;
+    left:150px;
+    z-index:2;
+  }
+  #eye2{top:140px;
+    left:250px;
+    z-index:2;
+  }
+  .eyeball{
+    width:40px;
+    height:40px;
+    background-color:black;
+    position:absolute;
+    border-radius:100px;
+  }
+  #eyeball1{
+    top:148px;
+    left:158px;
+    z-index:2;
+  }
+  #eyeball2{
+    top:148px;
+    left:258px;
+    z-index:2;
+  }
+  .nose{
+    height:0px;
+    width:0px;
+    border-bottom: 8px solid lightcoral;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    position:fixed;
+    top:195px;
+    left:215px;
+    transform: rotate(180deg);
+    z-index:2;
+  }
+  .whisker{
+    height:10px;
+    width:1px;
+    background-color:lightcoral;
+    position:absolute;
+  }
+  #whisker1{
+    top:200px;
+    left:223px;
+    z-index:2;
+    transform: rotate(45deg);
+  }
+  #whisker2{
+    top:200px;
+    left:228.5px;
+    z-index:2;
+    transform: rotate(-45deg);
+  }
+  footer { 
+      background-color: #2f4f4f;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    body {
+    overflow-x: hidden !important;
+}
+
+
+    .jumbotron {
+      display: flex;
+      align-items: center; /* Vertically align the content */
+      justify-content: center; /* Horizontally center the content */
+      padding: 50px; /* Add padding for spacing */
+      background-color: #2f4f4f; /* Matching the color scheme */
+      color: white;
+    }
+
+    .jumbotron h1 {
+      font-size: 80px; /* Make the text larger */
+      margin: 0;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000; 
+    }
+
+    .navbar-inverse {
+      margin-top: 0; 
+    }
+
+    .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+      color: white;
+    }
+
+    body {
+      padding-top: 50px;
+      margin: 0;
+    }
+
+    .dropdown-menu {
+      position: absolute !important;
+      top: 100% !important;
+      left: 0;
+      z-index: 1000;
+      display: none;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  </style>
+  <title>Character</title>
+</head>
+<body> 
+  <div class="container-fluid" style="padding:0px; margin:0px">
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-inverse">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="index.html">Portfolio</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index2.html">Web Dev</a></li>
+              <li><a href="academics.html">Academics</a></li>
+              <li><a href="hobbies.html">Hobbies</a></li>
+              <li><a href="sports.html">Sports</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Recipes<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="recipe3.html">Recipe 3</a></li>
+                  <li><a href="recipe2.html">Recipe 2</a></li>
+                  <li><a href="recipe1.html">Recipe 1</a></li>
+                </ul>
+              </li>
+              <li class="active"><a href="character.html">My Cat</a></li>
+              <li><a href="myID.html">My ID</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron text-center">
+          <h1>Cat</h1>
+        </div>
+      </div>
+    </div>
+  <h1 class="oswald"> Happy Thanksgiving!</h1>
+  <div class="body"></div>
+  <span class="head"></span>
+  <div class="foot" id="foot1"></div>
+  <div class="foot" id="foot2"></div>
+  <div class="tail"></div>
+  <div class="ear" id="ear1"></div>
+  <div class="ear" id="ear2"></div>
+  <div class="inner-ear" id="ear3"></div>
+  <div class="inner-ear" id="ear4"></div>
+  <div class="eye" id="eye1"></div>
+  <div class="eye" id="eye2"></div>
+  <div class="eyeball" id="eyeball1"></div>
+  <div class="eyeball" id="eyeball2"></div>
+  <div class="nose"></div>
+  <div class="whisker" id="whisker1"></div>
+  <div class="whisker" id="whisker2"></div>
+  <footer style="position:relative; top:300px" class="center">
+    <p>George Nikolov</p>
+    <p>Contact me at <a href="mailto:gnnikolov@cps.edu">gnnikolov@cps.edu</a></p>
+    <p>
+      <a href="https://www.instagram.com/georgenikolov720/" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAB9qr2CRzXXuNQnMisnDS3IuGBzBc2vUG7Q&s" alt="Instagram" width="30" height="30" style="margin-right: 10px; border-radius:30%">
+      </a>
+      <a href="https://www.spotify.com" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRslcO84eWfXP_4Ucd4Yfz6B8uqJmHaTo0iTw&s" alt="Spotify" width="30" height="30" style="border-radius:60%">
+      </a>
+    </p>
+  </footer>
+</body>
+</html>

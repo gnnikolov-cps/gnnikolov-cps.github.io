@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <title>Web Dev</title>
+  <style>
+    footer { 
+      background-color: #2f4f4f;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .jumbotron {
+      display: flex;
+      align-items: center; /* Vertically align the content */
+      justify-content: center; /* Horizontally center the content */
+      padding: 50px; /* Add padding for spacing */
+      background-color: #2f4f4f; /* Matching the color scheme */
+      color: white;
+    }
+
+    .jumbotron h1 {
+      font-size: 80px; /* Make the text larger */
+      margin: 0;
+    }
+
+    .carousel-inner > .item > img {
+      width:555px;
+      height:360px;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; 
+      width: 100%;
+    }
+
+    .container-fluid {
+      width: 100%;
+      overflow-x: hidden; 
+    }
+
+
+    .dropdown-menu {
+      position: absolute !important;
+      top: 100% !important;
+      left: 0;
+      z-index: 1000;
+      display: none;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    body {
+      padding-top: 50px;
+    }
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000; 
+    }
+
+    .navbar-inverse {
+      margin-top: 0; 
+    }
+
+    .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+      color: white;
+    }
+
+    .jumbotron {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px;
+      background-color: #2f4f4f;
+      color: white;
+    }
+
+    .jumbotron h1 {
+      font-size: 80px;
+      margin: 0;
+    }
+    body {
+    overflow-x: hidden !important;
+      padding-top: 50px;  
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container-fluid" style="padding:0px; margin:0px">
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-inverse">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="index.html">Portfolio</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="index2.html">Web Dev</a></li>
+              <li><a href="academics.html">Academics</a></li>
+              <li><a href="hobbies.html">Hobbies</a></li>
+              <li><a href="sports.html">Sports</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Recipes<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="recipe3.html">Recipe 3</a></li>
+                  <li><a href="recipe2.html">Recipe 2</a></li>
+                  <li><a href="recipe1.html">Recipe 1</a></li>
+                </ul>
+              </li>
+              <li><a href="character.html">My Cat</a></li>
+              <li><a href="myID.html">My ID</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron text-center">
+          <h1>Web Dev Projects</h1>
+        </div>
+      </div>
+    </div>
+      
+    <div class="container bg-success">
+      <div class="row">
+          <div class="col-md-6">
+          <h3 class="text-center bg-primary">My Projects</h3>
+          <div style="margin-bottom:10px">
+            
+            <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel1" data-slide-to="1"></li>
+                <li data-target="#myCarousel1" data-slide-to="2"></li>
+              </ol>
+          
+              <div class="carousel-inner" role="listbox">
+          
+                <div class="item active">
+                  <img src="media/recipe3pic.png" alt="Recipe 3" width="460" height="345">
+                  <div class="carousel-caption">
+                    <h3 style="color:black">Recipe</h3>
+                    <p style="color:black">French Fries Recipe using Bootstrap, CSS, and HTML.</p>
+                  </div>
+                </div>
+          
+                <div class="item">
+                  <img src="media/characterpic.png" alt="Character" width="460" height="345">
+                  <div class="carousel-caption">
+                    <h3>My Character</h3>
+                    <p>A cat I made for Thanksgiving using divs and CSS! </p>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <img src="media/myID.png" alt="Flower" width="460" height="345">
+                  <div class="carousel-caption">
+                    <h3 style="color:black;">My ID</h3>
+                    <p style="color:black;">My ID for school made using tables.</p>
+                  </div>
+                </div>
+          
+              </div>
+          
+              <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+    <div class="col-md-6">
+          <h3 class="text-center bg-primary">Resources I Use</h3>
+          <div style="margin-bottom:10px">
+            
+            <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel2" data-slide-to="1"></li>
+                <li data-target="#myCarousel2" data-slide-to="2"></li>
+              </ol>
+          
+              <div class="carousel-inner" role="listbox">
+          
+                <div class="item active">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp-_6xsw-5CJo5zcpjBF8rsgCwwLD5Gl1PEQ&s" alt="HTML" width="460" height="345">
+                  <div class="carousel-caption">
+                    <h3>HTML</h3>
+                    <p>I code all of my websites using HTML 5.</p>
+                  </div>
+                </div>
+          
+                <div class="item">
+                  <img src="https://customizepress.ca/wp-content/uploads/2017/01/bootstrap-logo.jpg" alt="Bootstrap" width="460" height="345">
+                  <div class="carousel-caption">
+                    <h3>Bootstrap</h3>
+                    <p>Web developers using Bootstrap can build websites much faster without spending time worrying about basic commands and functions.</p>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp842s1OQ89NTm3eYjSVIBU2l4gNNDPjephClFg5RN3ulXdc-j:https://delta-dev-software.fr/wp-content/uploads/2024/05/CSS-Logo.png&s" alt="CSS" width="460" height="345">
+                  <div class="carousel-caption">
+                    <h3 style="color:black;">CSS </h3>
+                    <p style="color:black;">CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+                  </div>
+                </div>
+          
+              </div>
+          
+              <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+
+      
+
+      <div class="row" style="margin-top:20px">
+        <div class="col-md-12">
+          <footer class="center">
+            <p>George Nikolov</p>
+            <p>Contact me at <a href="mailto:gnnikolov@cps.edu">gnnikolov@cps.edu</a></p>
+            <p>
+              <a href="https://www.instagram.com/georgenikolov720/" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAB9qr2CRzXXuNQnMisnDS3IuGBzBc2vUG7Q&s" alt="Instagram" width="30" height="30" style="margin-right: 10px; border-radius:30%">
+              </a>
+              <a href="https://www.spotify.com" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRslcO84eWfXP_4Ucd4Yfz6B8uqJmHaTo0iTw&s" alt="Spotify" width="30" height="30" style="border-radius:60%">
+              </a>
+            </p>
+          </footer>
+        </div>
+      </div>
+      
+              </body>
+</html>
